@@ -1,6 +1,6 @@
 steps:
 - pwsh: |
-    if ($env:SKIPSIGNING -eq 'false' -or (($null -ne $env:FORCESIGNING) -and ($env:FORCESIGNING -eq $true)))
+    if ($env:SKIPSIGN -eq 'false' -or (($null -ne $env:FORCESIGN) -and ($env:FORCESIGN -eq $true)))
     {
       $vstsCommandString = "vso[task.setvariable variable=SHOULDSIGN]true"
     }
