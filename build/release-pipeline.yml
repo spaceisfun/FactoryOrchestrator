@@ -435,7 +435,7 @@ stages:
           artifact: ServiceZips
 
   - stage: 'Publish_vPack_Push_NuGet'
-    condition: and(eq($[ stageDependencies.Sign_Publish_NuGet_ServiceZip_Artifacts.Job_Sign_Publish_NuGet_ServiceZip_Artifacts.outputs['SetSHOULDPUSH.SHOULDPUSH'] ], 'true'), ne(parameters.UseTestingArtifacts, true))  
+    condition: and(eq(stageDependencies.Sign_Publish_NuGet_ServiceZip_Artifacts.Job_Sign_Publish_NuGet_ServiceZip_Artifacts.outputs['SetSHOULDPUSH.SHOULDPUSH'], 'true'), ne('${{ parameters.UseTestingArtifacts }}', true))  
     dependsOn:
       - 'Sign_Publish_NuGet_ServiceZip_Artifacts'
     pool:
