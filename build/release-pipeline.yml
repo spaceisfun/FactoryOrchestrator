@@ -441,7 +441,7 @@ stages:
       name: Package ES Standard Build
     jobs:
       - deployment: Job_Publish_vPack_Push_NuGet
-        condition: and(eq($[stageDependencies.Sign_Publish_NuGet_ServiceZip_Artifacts.Job_Sign_Publish_NuGet_ServiceZip_Artifacts.outputs['SetSHOULDPUSH.SHOULDPUSH']], 'true'), ne(parameters.UseTestingArtifacts, true))
+        condition: and(eq($[ stageDependencies.Sign_Publish_NuGet_ServiceZip_Artifacts.Job_Sign_Publish_NuGet_ServiceZip_Artifacts.outputs['SetSHOULDPUSH.SHOULDPUSH'] ], 'true'), ne(parameters.UseTestingArtifacts, true))
         environment: FO-Publish-Release
         strategy:
           runOnce:
