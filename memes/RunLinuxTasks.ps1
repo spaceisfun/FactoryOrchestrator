@@ -16,7 +16,7 @@ Write-Host $str
 Start-Sleep 1
 $a = Read-Host "Do you wish to run your daily Linux checkup?"
 $ver = $client.GetOSVersionString()
-Write-Host "Running the LinuxTasks TaskList with Factory Orchestrator on Linux version $ver..."
+Write-Host "Running the LinuxTasks TaskList with Factory Orchestrator on Linux version $ver...`n"
 $tlguid = [guid]"9810e793-02b0-4eda-bc96-2ffbd343dab3"
 $tl = $client.QueryTaskList($tlguid)
 $client.RunTaskList($tlguid)
@@ -26,7 +26,15 @@ foreach ($t in $tl.Tasks)
 {
     $r = $client.QueryTaskRun($t.LatestTaskRunGuid)
     $last = 0
-    Write-Host "    Task $($t.Name) is running on $ver.... Real-time output:`n"
+    if ($t.Name -ne "Take action")
+    {
+        Write-Host "    Task $($t.Name) is running on $ver.... Real-time output:`n"
+    }
+    else
+    {
+        Write-Host "    Task $($t.Name) is running on $ver.... And requires user interaction!"
+    }
+
     while (-not $r.TaskRunComplete)
     {
         while ($last -lt  $r.TaskOutput.Count)
