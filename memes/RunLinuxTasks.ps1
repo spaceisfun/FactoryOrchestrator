@@ -4,7 +4,7 @@ Param
 )
 
 Write-Host "Connecting to Factory Orchestrator service running on your Windows Subsystem for Linux instance..."
-$client.Connect()
+$client.Connect($true)
 Start-Sleep 1
 Write-Host "Connected!"
 Write-Host ""
@@ -54,3 +54,5 @@ foreach ($t in $tl.Tasks)
 }
 
 Write-Host "Thanks for using Factory Orchestrator :)"
+Start-Sleep 10
+$client.ResetService()
