@@ -83,7 +83,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="PassButton" Content="Memes ❤" Grid.Column="0" Margin="20" FontSize="50" Click="PassButton_Click"/>
-                <Button x:Name="FailButton" Content="Ignore 🗨" Grid.Column="1" Margin="20" FontSize="50" Click="FailButton_Click"/>
+                <Button x:Name="FailButton" Content="Ignore 🔕" Grid.Column="1" Margin="20" FontSize="50" Click="FailButton_Click"/>
                 <Button x:Name="AbortButton" Content="Block 🚫" Grid.Column="2" Margin="20" FontSize="50" Click="AbortButton_Click"/>
             </Grid>
             

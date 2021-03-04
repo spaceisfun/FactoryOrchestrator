@@ -9,7 +9,7 @@ Start-Sleep 1
 Write-Host "Connected!"
 Write-Host ""
 $client.ResetService()
-$client.LoadTaskListsFromXmlFile('/home/jafriedm/FactoryOrchestrator/memes/LinuxTasks.xml')
+$discard = $client.LoadTaskListsFromXmlFile('/home/jafriedm/FactoryOrchestrator/memes/LinuxTasks.xml')
 
 $str = "Factory Orchestrator service version: " + $client.GetServiceVersionString()
 Write-Host $str
@@ -28,18 +28,18 @@ foreach ($t in $tl.Tasks)
     $last = 0
     if ($t.Name -ne "Take action")
     {
-        Write-Host "    Task $($t.Name) is running on $ver.... Real-time output:`n"
+        Write-Host "Task $($t.Name) is running on $ver.... Real-time output:`n"
     }
     else
     {
-        Write-Host "    Task $($t.Name) is running on $ver.... And requires user interaction!"
+        Write-Host "Task $($t.Name) is running on $ver.... And requires user interaction!"
     }
 
     while (-not $r.TaskRunComplete)
     {
         while ($last -lt  $r.TaskOutput.Count)
         {
-            Write-Host $r.TaskOutput[$last++]
+            Write-Host "    $($r.TaskOutput[$last++])"
         }
 
         $r = $client.QueryTaskRun($t.LatestTaskRunGuid)
@@ -47,10 +47,10 @@ foreach ($t in $tl.Tasks)
 
     while ($last -lt  $r.TaskOutput.Count)
     {
-        Write-Host $r.TaskOutput[$last++]
+        Write-Host "    $($r.TaskOutput[$last++])"
     }
 
-    Write-Host "`n    Task $($t.Name) is complete!`n"
+    Write-Host "`nTask $($t.Name) is complete!`n"
 }
 
 Write-Host "Thanks for using Factory Orchestrator :)"

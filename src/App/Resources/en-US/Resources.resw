@@ -405,7 +405,7 @@ If "Factory Reset" is chosen, the service is restarted as if it is first boot. F
     <value>FactoryOrchestratorXML file to load from:</value>
   </data>
   <data name="LocalDevice" xml:space="preserve">
-    <value>Local Device</value>
+    <value>Local WSL 2</value>
   </data>
   <data name="LogPathConst.Text" xml:space="preserve">
     <value>Log:</value>
