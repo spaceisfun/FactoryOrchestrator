@@ -1625,6 +1625,8 @@ namespace Microsoft.FactoryOrchestrator.Service
             {
                 _taskExecutionManager.RunAllTaskLists();
             }
+            
+            ServiceLogger.LogInformation($"---------------------------------------------------------------\n\nWelcome to the top-secret Factory Orchestrator service Linux prototype.\nDO NOT share pictures or videos of this, we want it to be a big surprise ;)\n\n---------------------------------------------------------------");
         }
 
         private bool LoadFirstBootStateFile(bool force)

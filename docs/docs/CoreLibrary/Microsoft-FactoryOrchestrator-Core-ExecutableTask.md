@@ -13,8 +13,8 @@ Derived
 &#8627; [PowerShellTask](./Microsoft-FactoryOrchestrator-Core-PowerShellTask.md 'Microsoft.FactoryOrchestrator.Core.PowerShellTask')  
 &#8627; [TAEFTest](./Microsoft-FactoryOrchestrator-Core-TAEFTest.md 'Microsoft.FactoryOrchestrator.Core.TAEFTest')  
 ### Constructors
-- [ExecutableTask(string)](./Microsoft-FactoryOrchestrator-Core-ExecutableTask-ExecutableTask(string).md 'Microsoft.FactoryOrchestrator.Core.ExecutableTask.ExecutableTask(string)')
 - [ExecutableTask(string, Microsoft.FactoryOrchestrator.Core.TaskType)](./Microsoft-FactoryOrchestrator-Core-ExecutableTask-ExecutableTask(string_Microsoft-FactoryOrchestrator-Core-TaskType).md 'Microsoft.FactoryOrchestrator.Core.ExecutableTask.ExecutableTask(string, Microsoft.FactoryOrchestrator.Core.TaskType)')
+- [ExecutableTask(string)](./Microsoft-FactoryOrchestrator-Core-ExecutableTask-ExecutableTask(string).md 'Microsoft.FactoryOrchestrator.Core.ExecutableTask.ExecutableTask(string)')
 ### Properties
 - [BackgroundTask](./Microsoft-FactoryOrchestrator-Core-ExecutableTask-BackgroundTask.md 'Microsoft.FactoryOrchestrator.Core.ExecutableTask.BackgroundTask')
 - [Name](./Microsoft-FactoryOrchestrator-Core-ExecutableTask-Name.md 'Microsoft.FactoryOrchestrator.Core.ExecutableTask.Name')
