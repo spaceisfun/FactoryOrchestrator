@@ -9,7 +9,7 @@ Start-Sleep .5
 Write-Progress -Activity "Checking Twitter interactions...." -PercentComplete 100
 Start-Sleep 1
 Write-Progress -Activity "Checking Twitter interactions...." -Completed
-Write-Error
+Write-Host
 "
 ╔═══╗╔╗         ╔╗ ╔╗
 ║╔═╗║║║        ╔╝╚╗║║
@@ -19,3 +19,4 @@ Write-Error
 ╚╝ ╚╝╚═╝╚══╝╚╝  ╚═╝╚╝
 `nTwitter troll detected in your replies!
 "
+Start-Sleep 5

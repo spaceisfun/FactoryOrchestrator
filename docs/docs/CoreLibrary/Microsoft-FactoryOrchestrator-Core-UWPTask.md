@@ -8,8 +8,8 @@ public class UWPTask : Microsoft.FactoryOrchestrator.Core.ExternalTask
 ```
 Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.Object 'System.Object') &#129106; [Microsoft.FactoryOrchestrator.Core.NotifyPropertyChangedBase](./../../CoreLibrary/Microsoft-FactoryOrchestrator-Core-NotifyPropertyChangedBase 'Microsoft.FactoryOrchestrator.Core.NotifyPropertyChangedBase') &#129106; [TaskBase](./Microsoft-FactoryOrchestrator-Core-TaskBase.md 'Microsoft.FactoryOrchestrator.Core.TaskBase') &#129106; [ExternalTask](./Microsoft-FactoryOrchestrator-Core-ExternalTask.md 'Microsoft.FactoryOrchestrator.Core.ExternalTask') &#129106; UWPTask  
 ### Constructors
-- [UWPTask(string, string)](./Microsoft-FactoryOrchestrator-Core-UWPTask-UWPTask(string_string).md 'Microsoft.FactoryOrchestrator.Core.UWPTask.UWPTask(string, string)')
 - [UWPTask(string)](./Microsoft-FactoryOrchestrator-Core-UWPTask-UWPTask(string).md 'Microsoft.FactoryOrchestrator.Core.UWPTask.UWPTask(string)')
+- [UWPTask(string, string)](./Microsoft-FactoryOrchestrator-Core-UWPTask-UWPTask(string_string).md 'Microsoft.FactoryOrchestrator.Core.UWPTask.UWPTask(string, string)')
 ### Properties
 - [AutoPassedIfLaunched](./Microsoft-FactoryOrchestrator-Core-UWPTask-AutoPassedIfLaunched.md 'Microsoft.FactoryOrchestrator.Core.UWPTask.AutoPassedIfLaunched')
 - [Name](./Microsoft-FactoryOrchestrator-Core-UWPTask-Name.md 'Microsoft.FactoryOrchestrator.Core.UWPTask.Name')

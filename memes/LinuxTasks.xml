@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FactoryOrchestratorXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TaskLists>
+    <TaskList Guid="9810e793-02b0-4eda-bc96-2ffbd343dab3" Name="CheckTwitterInteractions" RunInParallel="false" AllowOtherTaskListsToRun="false">
+      <Task xsi:type="PowerShellTask" Path="~/FactoryOrchestrator/memes/CheckTwitter.ps1"/>
+      <Task xsi:type="ExternalTask" Name="Twitter troll detected!" Path="~/FactoryOrchestrator/memes/alert.jpg" Arguments="What action do you want to take?"/>
+      <Task xsi:type="PowerShellTask" Path="~/FactoryOrchestrator/memes/LaunchMemesFromWindows.ps1"/>
+    </TaskList>
+  </TaskLists>
+</FactoryOrchestratorXML>

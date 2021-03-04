@@ -14,8 +14,8 @@ Derived
 &#8627; [FactoryOrchestratorXmlException](./Microsoft-FactoryOrchestrator-Core-FactoryOrchestratorXmlException.md 'Microsoft.FactoryOrchestrator.Core.FactoryOrchestratorXmlException')  
 ### Constructors
 - [FactoryOrchestratorException()](./Microsoft-FactoryOrchestrator-Core-FactoryOrchestratorException-FactoryOrchestratorException().md 'Microsoft.FactoryOrchestrator.Core.FactoryOrchestratorException.FactoryOrchestratorException()')
+- [FactoryOrchestratorException(string)](./Microsoft-FactoryOrchestrator-Core-FactoryOrchestratorException-FactoryOrchestratorException(string).md 'Microsoft.FactoryOrchestrator.Core.FactoryOrchestratorException.FactoryOrchestratorException(string)')
 - [FactoryOrchestratorException(string, System.Exception)](./Microsoft-FactoryOrchestrator-Core-FactoryOrchestratorException-FactoryOrchestratorException(string_System-Exception).md 'Microsoft.FactoryOrchestrator.Core.FactoryOrchestratorException.FactoryOrchestratorException(string, System.Exception)')
 - [FactoryOrchestratorException(string, System.Nullable&lt;System.Guid&gt;, System.Exception)](./Microsoft-FactoryOrchestrator-Core-FactoryOrchestratorException-FactoryOrchestratorException(string_System-Nullable-System-Guid-_System-Exception).md 'Microsoft.FactoryOrchestrator.Core.FactoryOrchestratorException.FactoryOrchestratorException(string, System.Nullable&lt;System.Guid&gt;, System.Exception)')
-- [FactoryOrchestratorException(string)](./Microsoft-FactoryOrchestrator-Core-FactoryOrchestratorException-FactoryOrchestratorException(string).md 'Microsoft.FactoryOrchestrator.Core.FactoryOrchestratorException.FactoryOrchestratorException(string)')
 ### Properties
 - [Guid](./Microsoft-FactoryOrchestrator-Core-FactoryOrchestratorException-Guid.md 'Microsoft.FactoryOrchestrator.Core.FactoryOrchestratorException.Guid')

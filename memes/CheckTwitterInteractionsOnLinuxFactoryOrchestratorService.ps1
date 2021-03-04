@@ -4,12 +4,13 @@ $c.Connect()
 Start-Sleep 1
 Write-Host "Connected!"
 Write-Host ""
-$str = "Service OS version information: " + $c.GetOSVersionString()
+$str = "Factory Orchestrator service version: " + $c.GetServiceVersionString()
 Write-Host $str
 Start-Sleep 1
 $a = Read-Host "Do you wish to check your Twitter interactions?"
-Write-Host "Running the CheckTwitterInteractions TaskList on $($c.GetOSVersionString()) Factory Orchestrator..."
+Write-Host "Running the CheckTwitterInteractions TaskList with Factory Orchestrator on Linux version $($c.GetOSVersionString())..."
 $tl = $c.QueryTaskList("9810e793-02b0-4eda-bc96-2ffbd343dab3")
+$c.RunTaskList("9810e793-02b0-4eda-bc96-2ffbd343dab3")
 foreach ($t in $tl.Tasks)
 {
     $r = $c.QueryTaskRun($t.LatestTaskRunGuid)
