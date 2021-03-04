@@ -80,7 +80,7 @@ namespace Microsoft.FactoryOrchestrator.Service
                           builder.AddTcpEndpoint<IFactoryOrchestratorService>(options =>
                           {
                               options.IpEndpoint = IPAddress.Any;
-                              options.Port = 47685;
+                              options.Port = 45684;
                               options.IncludeFailureDetailsInResponse = true;
                               options.MaxConcurrentCalls = 5;
                           });
@@ -90,7 +90,7 @@ namespace Microsoft.FactoryOrchestrator.Service
                           builder.AddTcpEndpoint<IFactoryOrchestratorService>(options =>
                           {
                               options.IpEndpoint = IPAddress.Loopback;
-                              options.Port = 47685;
+                              options.Port = 45684;
                               options.IncludeFailureDetailsInResponse = true;
                               options.MaxConcurrentCalls = 5;
                           });
