@@ -11,8 +11,8 @@ Inheritance [System.Object](https://docs.microsoft.com/en-us/dotnet/api/System.O
 Derived  
 &#8627; [UWPTask](./Microsoft-FactoryOrchestrator-Core-UWPTask.md 'Microsoft.FactoryOrchestrator.Core.UWPTask')  
 ### Constructors
-- [ExternalTask(string)](./Microsoft-FactoryOrchestrator-Core-ExternalTask-ExternalTask(string).md 'Microsoft.FactoryOrchestrator.Core.ExternalTask.ExternalTask(string)')
 - [ExternalTask(string, string, Microsoft.FactoryOrchestrator.Core.TaskType)](./Microsoft-FactoryOrchestrator-Core-ExternalTask-ExternalTask(string_string_Microsoft-FactoryOrchestrator-Core-TaskType).md 'Microsoft.FactoryOrchestrator.Core.ExternalTask.ExternalTask(string, string, Microsoft.FactoryOrchestrator.Core.TaskType)')
+- [ExternalTask(string)](./Microsoft-FactoryOrchestrator-Core-ExternalTask-ExternalTask(string).md 'Microsoft.FactoryOrchestrator.Core.ExternalTask.ExternalTask(string)')
 ### Properties
 - [Name](./Microsoft-FactoryOrchestrator-Core-ExternalTask-Name.md 'Microsoft.FactoryOrchestrator.Core.ExternalTask.Name')
 ### Methods

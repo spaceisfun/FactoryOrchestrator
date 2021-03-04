@@ -1,1 +1,1 @@
-PAUSE 3
+PAUSE %1

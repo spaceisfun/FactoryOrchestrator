@@ -1,14 +1,11 @@
-Write-Progress -Activity "Checking Twitter interactions...." -PercentComplete 0
-Start-Sleep .5
-Write-Progress -Activity "Checking Twitter interactions...." -PercentComplete 25
-Start-Sleep .5
-Write-Progress -Activity "Checking Twitter interactions...." -PercentComplete 50
-Start-Sleep .5
-Write-Progress -Activity "Checking Twitter interactions...." -PercentComplete 75
-Start-Sleep .5
-Write-Progress -Activity "Checking Twitter interactions...." -PercentComplete 100
+Write-Host "Connecting to Twitter.com..."
+Start-Sleep 2
+Write-Host "Liking posts about Beagles and Bodega cats..."
+Start-Sleep 3
+Write-Host "Blocking bots..."
 Start-Sleep 1
-Write-Progress -Activity "Checking Twitter interactions...." -Completed
+Write-Host "Checking Twitter interactions...." 
+Start-Sleep 2
 Write-Host
 "
 ╔═══╗╔╗         ╔╗ ╔╗

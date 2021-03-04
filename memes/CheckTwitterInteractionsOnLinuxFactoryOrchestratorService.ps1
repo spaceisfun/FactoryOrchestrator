@@ -1,21 +1,27 @@
-$c = new-factoryorchestratorclient 127.0.0.1
+Param
+(
+    [Microsoft.FactoryOrchestrator.Client.FactoryOrchestratorClientSync]$client
+)
+
 Write-Host "Connecting to Factory Orchestrator service running on your Windows Subsystem for Linux instance..."
-$c.Connect()
+$client.Connect()
 Start-Sleep 1
 Write-Host "Connected!"
 Write-Host ""
-$str = "Factory Orchestrator service version: " + $c.GetServiceVersionString()
+$str = "Factory Orchestrator service version: " + $client.GetServiceVersionString()
 Write-Host $str
 Start-Sleep 1
 $a = Read-Host "Do you wish to check your Twitter interactions?"
-Write-Host "Running the CheckTwitterInteractions TaskList with Factory Orchestrator on Linux version $($c.GetOSVersionString())..."
-$tl = $c.QueryTaskList("9810e793-02b0-4eda-bc96-2ffbd343dab3")
-$c.RunTaskList("9810e793-02b0-4eda-bc96-2ffbd343dab3")
+$ver = $client.GetOSVersionString()
+Write-Host "Running the CheckTwitterInteractions TaskList with Factory Orchestrator on Linux version $ver..."
+$tlguid = [guid]"9810e793-02b0-4eda-bc96-2ffbd343dab3"
+$tl = $client.QueryTaskList($tlguid)
+$client.RunTaskList($tlguid)
 foreach ($t in $tl.Tasks)
 {
-    $r = $c.QueryTaskRun($t.LatestTaskRunGuid)
+    $r = $client.QueryTaskRun($t.LatestTaskRunGuid)
     $last = 0
-    Write-Host "    Task $($t.Name) is running.... Real-time output:`n"
+    Write-Host "    Task $($t.Name) is running on $ver.... Real-time output:`n"
     while (-not $r.TaskRunComplete)
     {
         while ($last -lt  $r.TaskOutput.Count)
@@ -23,7 +29,7 @@ foreach ($t in $tl.Tasks)
             Write-Host $r.TaskOutput[$last++]
         }
 
-        $r = $c.QueryTaskRun($t.LatestTaskRunGuid)
+        $r = $client.QueryTaskRun($t.LatestTaskRunGuid)
     }
 
     while ($last -lt  $r.TaskOutput.Count)
