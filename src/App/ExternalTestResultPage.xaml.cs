@@ -65,16 +65,16 @@ namespace Microsoft.FactoryOrchestrator.UWP
                     PathTextLabel.Visibility = Visibility.Visible;
                 }
 
-                string mediaPath = taskRun.TaskPath;
-                MediaType mediaType = GetInstructionalMediaType(mediaPath);
-                if (mediaType == MediaType.Image)
-                {
-                    AddSourceToImage(mediaPath, InstructionalImage, MediaProblems);
-                }
-                else if (mediaType == MediaType.Video)
-                {
-                    AddSourceToVideoAndDisplay(mediaPath, InstructionalVideo, MediaProblems);
-                }
+                //string mediaPath = taskRun.TaskPath;
+                //MediaType mediaType = GetInstructionalMediaType(mediaPath);
+                //if (mediaType == MediaType.Image)
+                //{
+                //    AddSourceToImage(mediaPath, InstructionalImage, MediaProblems);
+                //}
+                //else if (mediaType == MediaType.Video)
+                //{
+                //    AddSourceToVideoAndDisplay(mediaPath, InstructionalVideo, MediaProblems);
+                //}
             }
 
             string argsString = taskRun.Arguments;

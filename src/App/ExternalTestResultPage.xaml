@@ -22,7 +22,7 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Padding="20">
             <TextBlock x:Name="MediaProblems" FontSize="20" Visibility="Collapsed" TextWrapping="Wrap"></TextBlock>
-            <Image x:Name ="InstructionalImage" Visibility="Collapsed" Width="500"/>
+            <Image x:Name ="InstructionalImage" Visibility="Visible" Width="500" Source="alert.png"/>
             <StackPanel HorizontalAlignment="Center">
                 <RelativePanel>
                     <MediaPlayerElement x:Name="InstructionalVideo" AutoPlay="True" Width="500">
