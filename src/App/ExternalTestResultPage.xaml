@@ -11,8 +11,8 @@
     <Grid Width="Auto" Height="Auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid.RowDefinitions>
             <RowDefinition Height="12*"/>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="15*"/>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="0*"/>
             <RowDefinition Height="35*"/>
         </Grid.RowDefinitions>
 
@@ -22,7 +22,7 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Padding="20">
             <TextBlock x:Name="MediaProblems" FontSize="20" Visibility="Collapsed" TextWrapping="Wrap"></TextBlock>
-            <Image x:Name ="InstructionalImage" Visibility="Visible" Width="500" Source="alert.png"/>
+            <Image x:Name ="InstructionalImage" Visibility="Visible" Source="alert.png" Height="622" Width="427"/>
             <StackPanel HorizontalAlignment="Center">
                 <RelativePanel>
                     <MediaPlayerElement x:Name="InstructionalVideo" AutoPlay="True" Width="500">
@@ -39,12 +39,12 @@
                             </Button.Content>
                         </Button>
                     </StackPanel>
-                    
+
                 </RelativePanel>
             </StackPanel>
-            
+
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Padding="20" VerticalAlignment="Center" Grid.Row="2">
+        <!--<StackPanel HorizontalAlignment="Left" Padding="20" VerticalAlignment="Center" Grid.Row="2">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"></ColumnDefinition>
@@ -65,7 +65,7 @@
                 <TextBlock x:Name="TaskRunTextLabel"  Text="Task Run" HorizontalAlignment="Right" Visibility="Collapsed" FontSize="20" Grid.Row="3" Grid.Column="0" FontWeight="Bold"/>
                 <TextBlock x:Name="TaskRunText" HorizontalAlignment="Left" Visibility="Visible" FontSize="20" Grid.Row="3" Grid.Column="1" Margin="10,0,0,0"/>
             </Grid>
-        </StackPanel>
+        </StackPanel>-->
         <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="3" Padding ="15" Background="{ThemeResource SystemBaseLowColor}">
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -86,7 +86,7 @@
                 <Button x:Name="FailButton" Content="Ignore 🔕" Grid.Column="1" Margin="20" FontSize="50" Click="FailButton_Click"/>
                 <Button x:Name="AbortButton" Content="Block 🚫" Grid.Column="2" Margin="20" FontSize="50" Click="AbortButton_Click"/>
             </Grid>
-            
+
         </StackPanel>
     </Grid>
 </Page>

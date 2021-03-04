@@ -58,12 +58,12 @@ namespace Microsoft.FactoryOrchestrator.UWP
             if (taskRun.TaskPath != taskRun.TaskName)
             {
                 string taskRunPath = taskRun.TaskPath;
-                if (!String.IsNullOrEmpty(taskRunPath))
-                {
-                    PathText.Text = taskRunPath;
-                    PathText.Visibility = Visibility.Visible;
-                    PathTextLabel.Visibility = Visibility.Visible;
-                }
+                //if (!String.IsNullOrEmpty(taskRunPath))
+                //{
+                //    PathText.Text = taskRunPath;
+                //    PathText.Visibility = Visibility.Visible;
+                //    PathTextLabel.Visibility = Visibility.Visible;
+                //}
 
                 //string mediaPath = taskRun.TaskPath;
                 //MediaType mediaType = GetInstructionalMediaType(mediaPath);
@@ -79,19 +79,19 @@ namespace Microsoft.FactoryOrchestrator.UWP
 
             string argsString = taskRun.Arguments;
             string taskRunString = taskRun.Guid.ToString();
-            if (!String.IsNullOrEmpty(argsString))
-            {
-                ArgsText.Text = argsString;
-                ArgsText.Visibility = Visibility.Visible;
-                ArgsTextLabel.Visibility = Visibility.Visible;
-            }
+            //if (!String.IsNullOrEmpty(argsString))
+            //{
+            //    ArgsText.Text = argsString;
+            //    ArgsText.Visibility = Visibility.Visible;
+            //    ArgsTextLabel.Visibility = Visibility.Visible;
+            //}
 
-            if (!String.IsNullOrEmpty(taskRunString))
-            {
-                TaskRunText.Text = taskRunString;
-                TaskRunText.Visibility = Visibility.Visible;
-                TaskRunTextLabel.Visibility = Visibility.Visible;
-            }
+            //if (!String.IsNullOrEmpty(taskRunString))
+            //{
+            //    TaskRunText.Text = taskRunString;
+            //    TaskRunText.Visibility = Visibility.Visible;
+            //    TaskRunTextLabel.Visibility = Visibility.Visible;
+            //}
             base.OnNavigatedTo(e);
         }
 
