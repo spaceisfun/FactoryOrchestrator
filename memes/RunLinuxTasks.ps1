@@ -42,7 +42,7 @@ foreach ($t in $tl.Tasks)
         Write-Host $r.TaskOutput[$last++]
     }
 
-    Write-Host "`n    Task $($t.Name) is complete!"
+    Write-Host "`n    Task $($t.Name) is complete!`n"
 }
 
 Write-Host "Thanks for using Factory Orchestrator :)"
