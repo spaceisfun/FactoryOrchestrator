@@ -9,7 +9,7 @@
         <Task xsi:type="ExecutableTask" Name="Checking Twitter.com 🥚" Path="/home/jafriedm/.dotnet/tools/pwsh" Arguments="/home/jafriedm/FactoryOrchestrator/memes/CheckTwitter.ps1"/>
         <Task xsi:type="ExternalTask" Name="Take action" Path="/home/jafriedm/FactoryOrchestrator/memes/alert.jpg" Arguments="What action do you want to take?"/>
         <!-- <Task xsi:type="PowerShellTask" Name="Launch memes from Windows 10 🪟" Path="/home/jafriedm/FactoryOrchestrator/memes/LaunchMemesFromWindows.ps1"/>-->
-        <Task xsi:type="ExecutableTask" Name="Launch memes from Windows 10 🪟"  Path="/mnt/c/Program\ Files\ \(x86\)/Microsoft/Edge/Application/msedge.exe" Arguments="C:\FactoryOrchestrator2\memes\deal.gif"/>
+        <Task xsi:type="ExecutableTask" Name="Launch memes from Windows 10 🪟"  Path="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" Arguments="C:\FactoryOrchestrator2\memes\deal.gif"/>
       </Tasks>
     </TaskList>
   </TaskLists>
