@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FactoryOrchestratorXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <TaskLists>
-    <TaskList Guid="9810e793-02b0-4eda-bc96-2ffbd343dab3" Name="CheckTwitterInteractions" RunInParallel="false" AllowOtherTaskListsToRun="false">
+    <TaskList Guid="9810e793-02b0-4eda-bc96-2ffbd343dab3" Name="LinuxTasks" RunInParallel="false" AllowOtherTaskListsToRun="false">
       <Tasks>
         <Task xsi:type="ExecutableTask" Name="defrag 📦" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Defragging WSL 2... &quot;"/>
         <Task xsi:type="ExecutableTask" Name="vim-emacs 📝" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Starting debate about vim versus emacs on linux listserv...&quot;"/>
         <Task xsi:type="ExecutableTask" Name="files 📁" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 3 &quot;Making identically named but differently cased files 😈...&quot;"/>
-        <Task xsi:type="PowerShellTask" Name="Checking Twitter.com 🥚" Path="/home/jafriedm/FactoryOrchestrator/memes/CheckTwitter.ps1"/>
+        <Task xsi:type="ExecutableTask" Name="Checking Twitter.com 🥚" Path="pwsh" Arguments="/home/jafriedm/FactoryOrchestrator/memes/CheckTwitter.ps1"/>
         <Task xsi:type="ExternalTask" Name="Take action" Path="/home/jafriedm/FactoryOrchestrator/memes/alert.jpg" Arguments="What action do you want to take?"/>
         <Task xsi:type="PowerShellTask" Name="Launch memes from Windows 10 🪟" Path="/home/jafriedm/FactoryOrchestrator/memes/LaunchMemesFromWindows.ps1"/>
       </Tasks>

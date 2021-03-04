@@ -8,15 +8,20 @@ $client.Connect()
 Start-Sleep 1
 Write-Host "Connected!"
 Write-Host ""
+$client.ResetService()
+$client.LoadTaskListsFromXmlFile('/home/jafriedm/FactoryOrchestrator/memes/LinuxTasks.xml')
+
 $str = "Factory Orchestrator service version: " + $client.GetServiceVersionString()
 Write-Host $str
 Start-Sleep 1
-$a = Read-Host "Do you wish to check your Twitter interactions?"
+$a = Read-Host "Do you wish to run your daily Linux checkup?"
 $ver = $client.GetOSVersionString()
-Write-Host "Running the CheckTwitterInteractions TaskList with Factory Orchestrator on Linux version $ver..."
+Write-Host "Running the LinuxTasks TaskList with Factory Orchestrator on Linux version $ver..."
 $tlguid = [guid]"9810e793-02b0-4eda-bc96-2ffbd343dab3"
 $tl = $client.QueryTaskList($tlguid)
 $client.RunTaskList($tlguid)
+Start-Sleep 2
+$tl = $client.QueryTaskList($tlguid)
 foreach ($t in $tl.Tasks)
 {
     $r = $client.QueryTaskRun($t.LatestTaskRunGuid)
