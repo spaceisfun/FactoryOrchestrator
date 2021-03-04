@@ -7,11 +7,11 @@
         <Task xsi:type="ExecutableTask" Name="vim-emacs 📝" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Starting debate about vim versus emacs on linux listserv...&quot;"/>
         <Task xsi:type="ExecutableTask" Name="file names 📁" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Making identically named but differently cased files 😈...&quot;"/>
         <Task xsi:type="ExecutableTask" Name="Checking Twitter.com 🥚" Path="/home/jafriedm/.dotnet/tools/pwsh" Arguments="/home/jafriedm/FactoryOrchestrator/memes/CheckTwitter.ps1"/>
-        <Task xsi:type="ExternalTask" Name="Take action" Path="/home/jafriedm/FactoryOrchestrator/memes/alert.png" Arguments="What action do you want to take?"/>
+        <Task xsi:type="ExternalTask" Name="Take action?" Path="/home/jafriedm/FactoryOrchestrator/memes/alert.png" Arguments="What action do you want to take?"/>
         <!-- <Task xsi:type="PowerShellTask" Name="Launch memes from Windows 10 🪟" Path="/home/jafriedm/FactoryOrchestrator/memes/LaunchMemesFromWindows.ps1"/>-->
-        <Task xsi:type="ExecutableTask" Name="Launch memes from Windows 10 🪟"  Path="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" Arguments="D:\FactoryOrchestrator2\memes\deal.gif"/>
+        <Task xsi:type="ExecutableTask" Name="Action 1 Windows 10 🪟"  Path="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" Arguments="D:\FactoryOrchestrator2\memes\deal.gif"/>
         <Task xsi:type="ExecutableTask" Name="Pause" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot; &quot;"/>
-        <Task xsi:type="ExecutableTask" Name="Launch more memes from Windows 10 🪟"  Path="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" Arguments="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
+        <Task xsi:type="ExecutableTask" Name="Action 2 from Windows 10 🪟"  Path="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" Arguments="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
       </Tasks>
     </TaskList>
   </TaskLists>
