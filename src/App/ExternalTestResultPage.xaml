@@ -17,7 +17,7 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Padding="15">
-            <TextBlock x:Uid="ActionRequired" Text="Action Required" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="35" FontWeight="Bold"/>
+            <TextBlock Text="Twitter troll detected. Action Required" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="35" FontWeight="Bold"/>
             <TextBlock x:Name ="TestText" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="15"/>
         </StackPanel>
         <StackPanel Grid.Row="1" Padding="20">
