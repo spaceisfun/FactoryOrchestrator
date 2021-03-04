@@ -5,7 +5,7 @@
       <Tasks>
         <Task xsi:type="ExecutableTask" Name="defrag 📦" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Defragging WSL 2... &quot;"/>
         <Task xsi:type="ExecutableTask" Name="vim-emacs 📝" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Starting debate about vim versus emacs on linux listserv...&quot;"/>
-        <Task xsi:type="ExecutableTask" Name="files 📁" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Making identically named but differently cased files 😈...&quot;"/>
+        <Task xsi:type="ExecutableTask" Name="file names 📁" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot;Making identically named but differently cased files 😈...&quot;"/>
         <Task xsi:type="ExecutableTask" Name="Checking Twitter.com 🥚" Path="/home/jafriedm/.dotnet/tools/pwsh" Arguments="/home/jafriedm/FactoryOrchestrator/memes/CheckTwitter.ps1"/>
         <Task xsi:type="ExternalTask" Name="Take action" Path="/home/jafriedm/FactoryOrchestrator/memes/alert.jpg" Arguments="What action do you want to take?"/>
         <!-- <Task xsi:type="PowerShellTask" Name="Launch memes from Windows 10 🪟" Path="/home/jafriedm/FactoryOrchestrator/memes/LaunchMemesFromWindows.ps1"/>-->
