@@ -10,6 +10,8 @@
         <Task xsi:type="ExternalTask" Name="Take action" Path="/home/jafriedm/FactoryOrchestrator/memes/alert.jpg" Arguments="What action do you want to take?"/>
         <!-- <Task xsi:type="PowerShellTask" Name="Launch memes from Windows 10 🪟" Path="/home/jafriedm/FactoryOrchestrator/memes/LaunchMemesFromWindows.ps1"/>-->
         <Task xsi:type="ExecutableTask" Name="Launch memes from Windows 10 🪟"  Path="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" Arguments="D:\FactoryOrchestrator2\memes\deal.gif"/>
+        <Task xsi:type="ExecutableTask" Name="Pause" Path="bash" Arguments="/home/jafriedm/FactoryOrchestrator/memes/delay_linux.sh 5 &quot; &quot;"/>
+        <Task xsi:type="ExecutableTask" Name="Launch more memes from Windows 10 🪟"  Path="/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" Arguments="https://www.youtube.com/watch?v=dQw4w9WgXcQ"/>
       </Tasks>
     </TaskList>
   </TaskLists>
