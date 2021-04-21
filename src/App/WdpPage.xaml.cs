@@ -46,25 +46,25 @@ namespace Microsoft.FactoryOrchestrator.UWP
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             
-            if (await IsWindowsDevicePortalRunning())
+            //if (await IsWindowsDevicePortalRunning())
             {
                 string ipAddress = Client.IsLocalHost ? "localhost" : $"{Client.IpAddress.ToString()}";
-                string url = "http://" + ipAddress + ":80";
+                string url = "http://" + ipAddress + ":50080";
                 Uri myUri = new Uri(url);
                 wdp.Navigate(myUri);
             }
-            else
-            {
-                ContentDialog failedAppsDialog = new ContentDialog
-                {
-                    Title = resourceLoader.GetString("WDPFailedTitle"),
-                    Content = resourceLoader.GetString("WDPFailedContent"),
-                    CloseButtonText = resourceLoader.GetString("Ok")
-                };
+            //else
+            //{
+            //    ContentDialog failedAppsDialog = new ContentDialog
+            //    {
+            //        Title = resourceLoader.GetString("WDPFailedTitle"),
+            //        Content = resourceLoader.GetString("WDPFailedContent"),
+            //        CloseButtonText = resourceLoader.GetString("Ok")
+            //    };
 
-                _ = await failedAppsDialog.ShowAsync();
-                base.OnNavigatedTo(e);
-            }
+            //    _ = await failedAppsDialog.ShowAsync();
+            //    base.OnNavigatedTo(e);
+            //}
         }
         
         private readonly FactoryOrchestratorUWPClient Client = ((App)Application.Current).Client;

@@ -135,7 +135,7 @@ namespace Microsoft.FactoryOrchestrator.Core
             return new Uri(baseUri, relativePart);
         }
 
-        private static async Task<ApplicationInstallStatus> GetInstallStatusAsync(string ipAddress = "localhost")
+        private static async Task<ApplicationInstallStatus> GetInstallStatusAsync(string ipAddress = "localhost:50080")
         {
             ApplicationInstallStatus status = ApplicationInstallStatus.None;
 
@@ -216,7 +216,7 @@ namespace Microsoft.FactoryOrchestrator.Core
         /// <param name="ipAddress">The ip address of the device to install the app on.</param>
         /// <exception cref="FileNotFoundException">
         /// </exception>
-        public static async Task InstallAppWithWDP(string appFilePath, List<string> dependentAppsFilePaths, string certFilePath, string ipAddress = "localhost")
+        public static async Task InstallAppWithWDP(string appFilePath, List<string> dependentAppsFilePaths, string certFilePath, string ipAddress = "localhost:50080")
         {
             ApplicationInstallStatus status = ApplicationInstallStatus.InProgress;
 
@@ -265,7 +265,7 @@ namespace Microsoft.FactoryOrchestrator.Core
         /// <param name="ipAddress">The ip address of the device to exit the app on.</param>
         /// <exception cref="ArgumentException">
         /// </exception>
-        public static async Task CloseAppWithWDP(string app, string ipAddress = "localhost")
+        public static async Task CloseAppWithWDP(string app, string ipAddress = "localhost:50080")
         {
             if (string.IsNullOrWhiteSpace(app))
             {
@@ -284,7 +284,7 @@ namespace Microsoft.FactoryOrchestrator.Core
         /// </summary>
         /// <param name="ipAddress">The ip address of the device to query.</param>
         /// <returns>AppPackages object containing the list of installed application packages.</returns>
-        public static async Task<AppPackages> GetInstalledAppPackagesAsync(string ipAddress = "localhost")
+        public static async Task<AppPackages> GetInstalledAppPackagesAsync(string ipAddress = "localhost:50080")
         {
             Uri uri = BuildEndpoint(
                 new Uri($"http://{ipAddress}"),

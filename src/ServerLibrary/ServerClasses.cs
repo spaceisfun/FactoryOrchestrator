@@ -1112,7 +1112,7 @@ namespace Microsoft.FactoryOrchestrator.Server
             string appFullName = "";
             try
             {
-                var response = WDPHelpers.WdpHttpClient.GetAsync(new Uri("http://localhost/api/app/packagemanager/packages")).Result;
+                var response = WDPHelpers.WdpHttpClient.GetAsync(new Uri("http://localhost:50080/api/app/packagemanager/packages")).Result;
 
                 if (!response.IsSuccessStatusCode)
                 {
