@@ -794,4 +794,16 @@ On retry</value>
     <value>to launch WDP in it.</value>
     <comment>Part 3 of 3 part textblock telling user the app cannot fully interact with windows device portal due to webview limitations</comment>
   </data>
+  <data name="ConfirmExit.AutomationProperties.Name" xml:space="preserve">
+    <value>Exit</value>
+    <comment>Accessibility info for exit button</comment>
+  </data>
+  <data name="ExitButton.AutomationProperties.Name" xml:space="preserve">
+    <value>Exit menu</value>
+    <comment>Accessibility info for exit menu</comment>
+  </data>
+  <data name="IndeterminateProgress.AutomationProperties.Name" xml:space="preserve">
+    <value>Action in progress</value>
+    <comment>Accessibility info for indeterminate progress bar to notify user requested action is ongoing</comment>
+  </data>
 </root>
