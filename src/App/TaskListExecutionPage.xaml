@@ -138,7 +138,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <ListView x:Name="TaskListsResultsAndButtonsView" Grid.Column="1" ScrollViewer.VerticalScrollMode="Disabled" ItemsSource="{x:Bind TaskListCollection, Mode=OneWay}" ItemTemplateSelector="{StaticResource TaskListViewSelector}" SelectionMode="Single" HorizontalAlignment="Right" SelectionChanged="TaskListsResultsAndButtonsView_SelectionChanged"/>
+                <ListView x:Name="TaskListsResultsAndButtonsView" Grid.Column="1" ScrollViewer.VerticalScrollMode="Disabled" ItemsSource="{x:Bind TaskListCollection, Mode=OneWay}" ItemTemplateSelector="{StaticResource TaskListViewSelector}" SelectionMode="Single" HorizontalAlignment="Right" SelectionChanged="TaskListsResultsAndButtonsView_SelectionChanged" MinHeight="1" MinWidth="1"/>
             </Grid>
         </ScrollViewer>
 
@@ -156,7 +156,7 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-                <ListView x:Name="ActiveTestsResultsView" Grid.Column="1" ScrollViewer.VerticalScrollMode="Disabled" ItemsSource="{x:Bind ActiveListCollection, Mode=OneWay}" ItemTemplateSelector="{StaticResource ResultsViewSelector}"  SelectionMode="Single" ItemClick="ActiveTestsResultsView_ItemClick" IsItemClickEnabled="True" HorizontalAlignment="Right"/>
+                <ListView x:Name="ActiveTestsResultsView" Grid.Column="1" ScrollViewer.VerticalScrollMode="Disabled" ItemsSource="{x:Bind ActiveListCollection, Mode=OneWay}" ItemTemplateSelector="{StaticResource ResultsViewSelector}"  SelectionMode="Single" ItemClick="ActiveTestsResultsView_ItemClick" IsItemClickEnabled="True" HorizontalAlignment="Right" MinHeight="1" MinWidth="1"/>
             </Grid>
         </ScrollViewer>
 

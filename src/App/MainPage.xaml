@@ -26,7 +26,7 @@
                 </StackPanel>
                 <Button x:Name="NetworkButton" x:Uid="NetworkButton" Visibility="Visible" Padding="5" Margin="10">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xEDA3;" FontSize="30" VerticalAlignment="Center" />
+                        <TextBlock x:Uid="NetworkButton" FontFamily="Segoe MDL2 Assets" Text="&#xEDA3;" FontSize="30" VerticalAlignment="Center" />
                     </StackPanel>
                     <Button.Flyout>
                         <Flyout x:Name="NetworkFlyout" Opening="NetworkFlyout_Opening">
@@ -38,14 +38,14 @@
                         </Flyout>
                     </Button.Flyout>
                 </Button>
-                <Button x:Name="SettingsButton" x:Uid="SettingsButton" Visibility="Visible" Padding="5" Margin="10">
+                <Button x:Name="SettingsButton" x:Uid="SettingsButton" Visibility="Visible" Padding="5" Margin="10" AutomationProperties.LabeledBy="{Binding ElementName=SettingsHeader}">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE713;" FontSize="30" VerticalAlignment="Center" />
+                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE713;" FontSize="30" VerticalAlignment="Center" AutomationProperties.LabeledBy="{Binding ElementName=SettingsHeader}"/>
                     </StackPanel>
                     <Button.Flyout>
                         <Flyout x:Name="SettingsFlyout" Opening="SettingsFlyout_Opening">
                             <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-                                <TextBlock Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" x:Uid="SettingsHeader" HorizontalAlignment="Center"/>
+                                <TextBlock Style="{StaticResource FlyoutPickerTitleTextBlockStyle}" x:Name="SettingsHeader" x:Uid="SettingsHeader" HorizontalAlignment="Center"/>
                                 <HyperlinkButton x:Uid="SettingsSubHeader" NavigateUri="https://microsoft.github.io/FactoryOrchestrator/use-the-factory-orchestrator-app#app-settings" HorizontalAlignment="Center"/>
                                 <StackPanel x:Name="SettingsStackPanel" Orientation="Vertical" HorizontalAlignment="Left">
                                     <CheckBox x:Name="SettingsTrackExecution" x:Uid="SettingsTrackExecution" IsThreeState="False" IsChecked="True" Checked="SettingsTrackExecution_Checked" Unchecked="SettingsTrackExecution_Checked" />
@@ -57,7 +57,7 @@
                 </Button>
                 <Button x:Name="ExitButton" AutomationProperties.LabeledBy="{Binding ElementName=ExitText}" Padding="5" Margin="10">
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock FontFamily="Segoe MDL2 Assets" Text="&#xE711;" FontSize="30" VerticalAlignment="Center" />
+                        <TextBlock  AutomationProperties.LabeledBy="{Binding ElementName=ExitText}" FontFamily="Segoe MDL2 Assets" Text="&#xE711;" FontSize="30" VerticalAlignment="Center" />
                     </StackPanel>
                     <Button.Flyout>
                         <Flyout x:Name="ExitFlyout" Closed="ExitFlyout_Closed">

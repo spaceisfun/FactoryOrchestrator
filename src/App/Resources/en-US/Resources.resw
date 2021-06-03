@@ -426,9 +426,6 @@ If "Factory Reset" is chosen, the service is restarted as if it is first boot. F
   <data name="MaybeDeleted" xml:space="preserve">
     <value>It may have been deleted.</value>
   </data>
-  <data name="NetworkButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
-    <value>Network information</value>
-  </data>
   <data name="NewCMDButton.Content" xml:space="preserve">
     <value>New Command Line File Task</value>
     <comment>button to create a new command line file task (batch file on windows, shell script on linux)</comment>
@@ -805,5 +802,8 @@ On retry</value>
   <data name="IndeterminateProgress.AutomationProperties.Name" xml:space="preserve">
     <value>Action in progress</value>
     <comment>Accessibility info for indeterminate progress bar to notify user requested action is ongoing</comment>
+  </data>
+  <data name="NetworkButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Network information</value>
   </data>
 </root>
